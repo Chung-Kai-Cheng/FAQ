@@ -1,14 +1,13 @@
 import Line from "./components/Line";
 import QandA from "./components/QandA";
 
-
 export default function App() {
   return(
 <div className="container h-full relative flex flex-col">
   <img src="../src/assets/images/background-pattern-mobile.svg" alt="header image" className="flex-none w-375px"/>
   <main className="h-3/5 bg-white absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 rounded-2xl overflow-y-scroll">
   <div className="flex items-center">
-    <img src="../src/assets/images/icon-star.svg" alt="stars"/>
+    <img src="../src/assets/images/icon-star.svg" alt="stars" className="w-6"/>
     <span className="font-bold text-2xl pl-4">FAQs</span>
     </div>
 <div className="">
