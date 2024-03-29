@@ -1,10 +1,27 @@
+import { useEffect, useState } from "react";
 import Line from "./components/Line";
 import QandA from "./components/QandA";
 
 export default function App() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  const handleResize = () => {
+  setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  },[])
+
+  const imgUrl = windowWidth < 375 ? "../src/assets/images/background-pattern-mobile.svg" : "../src/assets/images/background-pattern-desktop.svg"
+
   return(
 <div className="h-full relative flex flex-col">
-  <img src="../src/assets/images/background-pattern-mobile.svg" alt="header image" className=" h-1/4 object-cover"/>
+  <img src={imgUrl} alt="header image" className=" h-1/4 object-cover"/>
   <main className="h-3/5 bg-white absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 rounded-2xl overflow-y-scroll">
   <div className="flex items-center">
     <img src="../src/assets/images/icon-star.svg" alt="stars" className="w-6"/>
