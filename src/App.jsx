@@ -22,7 +22,8 @@ export default function App() {
   return(
 <div className="h-full relative flex flex-col">
   <img src={imgUrl} alt="header image" className="h-1/4 lg:h-1/3 object-cover"/>
-  <main className="h-3/5 bg-white absolute w-4/5 lg:h-3/5 lg:w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 lg:p-12 rounded-2xl overflow-y-scroll">
+  <main className="h-3/5 bg-white absolute w-4/5 lg:h-3/5 lg:w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 lg:p-12 rounded-2xl shadow-md">
+    <div className="overflow-y-scroll h-full">
   <div className="flex items-center">
     <img src="../src/assets/images/icon-star.svg" alt="stars" className="w-6"/>
     <span className="font-bold text-2xl lg:text-4xl pl-4">FAQs</span>
@@ -39,6 +40,7 @@ export default function App() {
   <Line/>
   <QandA question="How can I get help if I'm stuck on a Frontend Mentor challenge?" answer="The best place to get help is inside Frontend Mentor's Discord community. There's a help 
   channel where you can ask questions and seek support from other community members."/>
+  </div>
 </main>
   
   <footer className="h-3/4 w-full bg-light-pink"/>
