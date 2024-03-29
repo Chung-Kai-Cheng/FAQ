@@ -21,11 +21,11 @@ export default function App() {
 
   return(
 <div className="h-full relative flex flex-col">
-  <img src={imgUrl} alt="header image" className=" h-1/4 object-cover"/>
-  <main className="h-3/5 bg-white absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 rounded-2xl overflow-y-scroll">
+  <img src={imgUrl} alt="header image" className="h-1/4 lg:h-1/3 object-cover"/>
+  <main className="h-3/5 bg-white absolute w-4/5 lg:h-3/5 lg:w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 lg:p-12 rounded-2xl overflow-y-scroll">
   <div className="flex items-center">
     <img src="../src/assets/images/icon-star.svg" alt="stars" className="w-6"/>
-    <span className="font-bold text-2xl pl-4">FAQs</span>
+    <span className="font-bold text-2xl lg:text-4xl pl-4">FAQs</span>
     </div>
   <QandA question="What is Frontend Mentor, and how will it help me?" answer="Frontend Mentor offers realistic coding challenges to help developers improve their 
   frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
