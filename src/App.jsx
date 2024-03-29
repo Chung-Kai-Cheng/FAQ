@@ -10,7 +10,6 @@ export default function App() {
     <img src="../src/assets/images/icon-star.svg" alt="stars" className="w-6"/>
     <span className="font-bold text-2xl pl-4">FAQs</span>
     </div>
-<div className="">
   <QandA question="What is Frontend Mentor, and how will it help me?" answer="Frontend Mentor offers realistic coding challenges to help developers improve their 
   frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
   all levels and ideal for portfolio building."/>
@@ -23,7 +22,6 @@ export default function App() {
   <Line/>
   <QandA question="How can I get help if I'm stuck on a Frontend Mentor challenge?" answer="The best place to get help is inside Frontend Mentor's Discord community. There's a help 
   channel where you can ask questions and seek support from other community members."/>
-  </div>
 </main>
   
   <footer className="h-3/4 w-full bg-light-pink"/>
