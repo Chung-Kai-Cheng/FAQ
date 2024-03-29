@@ -10,12 +10,13 @@ export default function QandA({ question, answer}) {
 
   return (
     <div className="py-4">
-      <div className="font-semibold text-base lg:text-xl flex justify-between items-center hover:text-dark-purple active:text-dark-purple">
+      <div className="font-semibold text-base lg:text-xl flex justify-between items-center hover:text-dark-purple active:text-dark-purple cursor-pointer" 
+      onClick={toggleInformation} >
         <div className="pr-4 flex-1">
           {question}
         </div>        
         <span>
-          <div onClick={toggleInformation} className="flex-none">
+          <div className="flex-none">
           {more?
           <img src="../src/assets/images/icon-minus.svg" alt="minus"/>
           :
