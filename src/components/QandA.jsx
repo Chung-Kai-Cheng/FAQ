@@ -10,7 +10,7 @@ export default function QandA({ question, answer}) {
 
   return (
     <div className="py-4">
-      <div className="font-semibold text-base flex justify-between items-center">
+      <div className="font-semibold text-base flex justify-between items-center hover:text-dark-purple active:text-dark-purple">
         <div className="pr-4 flex-1">
           {question}
         </div>        
